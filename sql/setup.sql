@@ -5,14 +5,14 @@ DROP TABLE IF EXISTS cartoon_cats;
 CREATE TABLE cartoon_cats (
   id BIGINT GENERATED ALWAYS AS IDENTITY,
   name VARCHAR NOT NULL,
-  type VARCHAR NOT NULL,
+  TYPE VARCHAR NOT NULL,
   lives INT NOT NULL,
   url VARCHAR NOT NULL,
   year INT NOT NULL,
   is_sidekick BOOLEAN NOT NULL
 );
 
-INSERT INTO cartoon_cats (name, type, url, year, lives, is_sidekick)
+INSERT INTO cartoon_cats (name, TYPE, url, year, lives, is_sidekick)
 VALUES 
 ('Felix', 'Tuxedo', 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Felix_the_cat.svg/200px-Felix_the_cat.svg.png', 1892, 3, FALSE),
 ('Garfield', 'Orange Tabby', 'https://static.wikia.nocookie.net/garfield/images/9/9f/GarfieldCharacter.jpg', 1978, 7, FALSE),
